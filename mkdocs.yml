@@ -3,14 +3,12 @@
 site_name: 小C的个人博客
 site_url: https://squidfunk.github.io/mkdocs-material/
 site_author: 小C
-site_description: >-
-  程序员与金融的结合体;
-  谈股论基写程序~
+site_description: 程序人生
 
 # Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
-edit_uri: ""
+# repo_name: squidfunk/mkdocs-material
+# repo_url: https://github.com/squidfunk/mkdocs-material
+# edit_uri: ""
 
 # Copyright
 copyright: Copyright &copy; 2020 Mr.小C
@@ -55,7 +53,7 @@ theme:
   search_index_only: true
 
   # Default values, taken from mkdocs_theme.yml
-  language: en
+  language: zh
   features:
     - tabs
     - instant
@@ -66,9 +64,9 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  icon:
-    logo: logo
-  favicon: mkdocs-material/assets/favicon.png
+  icon: logo.svg
+    # logo: logo
+  favicon: assets/favicon.png
 
 # Extras
 extra:
