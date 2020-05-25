@@ -1,0 +1,94 @@
+
+# site detail
+site_name: 小C的个人博客
+site_url: https://squidfunk.github.io/mkdocs-material/
+site_author: 小C
+site_description: >-
+  程序员与金融的结合体;
+  谈股论基写程序~
+
+# Repository
+repo_name: squidfunk/mkdocs-material
+repo_url: https://github.com/squidfunk/mkdocs-material
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2020 Mr.小C
+
+# 导航
+nav:
+    - 股票:
+      - 股票: stock/index.md
+    - 基金: 
+      - 基金: fund/index.md
+    - 程序员人生: 
+        - HollowWord: codes/index.md
+        - 搭建博客: 
+          - 博客: codes/mkdocs/index.md
+          - 配置Python: codes/mkdocs/configPython.md
+          - 配置Mkdocs: codes/mkdocs/configmkdocs.md
+        - Swift: codes/swift/index.md
+        - Flutter: codes/flutter/index.md
+        - Python: codes/python/index.md
+    - 关于作者: 
+      - 作者: about.md
+
+
+# 安装 mkdocs
+# pip install mkdocs mkdocs-material
+# pip install mkdocs-windmill-dark
+# theme:
+  # name: material
+
+
+# Configuration
+theme:
+  name: null
+  custom_dir: mkdocs-material/material
+
+  # 404 page
+  static_templates:
+    - mkdocs-material/404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    - tabs
+    - instant
+  palette:
+    scheme: default
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: logo
+  favicon: mkdocs-material/assets/favicon.png
+
+# Extras
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/squidfunk
+
+# Google Analytics
+google_analytics:
+  - UA-XXXXXXXX-X
+  - auto
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
